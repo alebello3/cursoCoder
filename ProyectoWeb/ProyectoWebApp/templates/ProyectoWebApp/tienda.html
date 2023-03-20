@@ -1,0 +1,17 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+{% block content %}
+{% csrf_token %}
+
+    <br>
+    <p> Telefono: <input type = "text" name="telefono"><br><br>
+    <p> Fecha: <input type = "text" name="fecha"> <br>  <br>
+    <p> Entregado: <input type = "text" name="entregado"> <br>  <br>
+    <input type = "submit" value="Enviar">
+
+
+
+
+
+{% endblock %}

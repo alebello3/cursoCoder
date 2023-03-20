@@ -1,0 +1,24 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+{% block content %}
+
+
+<form action=""    method="POST">
+    {% csrf_token %}
+
+    <br>
+    <p> Nombre: <input type = "text" name="nombre"><br><br>
+    <p> Direccion: <input type = "text" name="direccion"> <br>  <br>
+    <p> Correo: <input type = "text" name="correo"> <br>  <br>
+    <p> Telefono: <input type = "text" name="telefono"> <br>  <br>
+    <input type = "submit" value="Enviar">
+ </form>   
+
+
+
+
+
+
+
+{% endblock %}
